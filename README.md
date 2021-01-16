@@ -49,6 +49,7 @@ Install Java 8 and 11
 ```
 brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk8
 brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk11
+#Installs at Library/Java/JavaVirtualMachines/ 
 ```
 
 Add each version of Java installed to 'jenv'
@@ -72,7 +73,8 @@ Verify
 ```java -version```
 
 
-#Install Maven
+# Install Maven
+
 via Homebrew(recommended)
 
 ```brew install maven```
