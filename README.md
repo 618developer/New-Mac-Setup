@@ -21,3 +21,11 @@ Follow initial steps at [Homebrew](https://brew.sh)
 # Java Install
 Will utilize *jenv* to easily switch between different jdk versions
 Reference -> [How to Manage Multiple Java Versions in macOs](https://medium.com/@chamikakasun/how-to-manage-multiple-java-version-in-macos-e5421345f6d0)
+
+```brew install jenv```
+
+Update shell configuration file
+
+```export PATH="$HOME/.jenv/bin:$PATH"```
+```eval "$(jenv init -)"```
+
