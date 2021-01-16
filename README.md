@@ -26,6 +26,8 @@ Reference -> [How to Manage Multiple Java Versions in macOs](https://medium.com/
 
 Update shell configuration file
 
-```export PATH="$HOME/.jenv/bin:$PATH"```
-```eval "$(jenv init -)"```
+```
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+```
 
