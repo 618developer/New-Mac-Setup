@@ -27,7 +27,23 @@ Reference -> [How to Manage Multiple Java Versions in macOs](https://medium.com/
 Update shell configuration file
 
 ```
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
 ```
 
+source ~/.zshrc to resource your conifg(or restart terminal)
+
+I'm using maven so these two commands are needed to make sure maven sees JAVA_HOME and uses the current JDK we select
+
+```
+jenv enable-plugin export
+jenv enable-plugin maven
+```
+
+Install Java 8
+
+```brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk8```
+
+Install Java 11 (or any other available version you would like)
+
+```brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk11```
