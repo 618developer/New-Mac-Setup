@@ -40,10 +40,41 @@ jenv enable-plugin export
 jenv enable-plugin maven
 ```
 
-Install Java 8
+View available versions of JDK to install
 
-```brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk8```
+```brew search jdk```
 
-Install Java 11 (or any other available version you would like)
+Install Java 8 and 11
 
-```brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk11```
+```
+brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk8
+brew install --cask AdoptOpenJDK/openjdk/adoptopenjdk11
+```
+
+Add each version of Java installed to 'jenv'
+
+```
+jenv add <your_jdk_path>
+#Example: jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+```
+**The last version you add will be set as current**
+
+Verify all versions are in 'jenv'
+
+```jenv versions```
+
+Set Java 8 as current(after installing a different after it)
+
+```jenv global 1.8```
+
+Verify
+
+```java -version```
+
+
+#Install Maven
+via Homebrew(recommended)
+
+```brew install maven```
+
+or dowload from Apache Maven and move to your ```~/development``` dir
